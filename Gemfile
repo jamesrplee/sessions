@@ -6,6 +6,10 @@ gem 'middleman-bower'
 gem 'middleman-livereload'
 gem 'middleman-search_engine_sitemap'
 
+gem "middleman-blog", "~> 3.0"
+
+gem "contentful_middleman"
+
 # Source minification
 gem 'middleman-minify-html'
 gem 'middleman-smusher'

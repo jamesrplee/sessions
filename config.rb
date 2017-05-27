@@ -27,6 +27,17 @@ activate :automatic_image_sizes
 # Split up each required asset into its own script/style tag instead of combining them
 set :debug_assets, true
 
+activate :blog do |blog|
+  # set options on blog
+end
+
+activate :contentful do |f|
+  f.space         = {partners: '5cmv9rvbfosm'}
+  f.access_token  = 'ad1d2b45ed02a00918958f26d20fd1fcc878fea6b9ed6c7f619ff38161fc2a1b'
+  f.cda_query     = { content_type: '2wKn6yEnZewu2SCCkus4as', include: 1 }
+  f.content_types = { partner: 'content-type-id'}
+end
+
 # --------------------------------------------------------------------------------------------------
 # Paths
 # --------------------------------------------------------------------------------------------------
